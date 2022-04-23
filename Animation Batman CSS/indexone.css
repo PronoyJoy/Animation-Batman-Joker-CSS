@@ -1,0 +1,246 @@
+
+
+
+
+html, body{
+    height: 100%;
+    width: 100% ;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.title .city .sky .road{
+    position: relative;
+}
+
+.title{
+    padding: .5%;
+    text-align: center;
+    font-size: 150%;
+    height: 15%;
+    color: rgb(234, 13, 13);
+    font-family: 'Bebas Neue', cursive;
+    background-image: linear-gradient(to right top, #370505, #5f0816, #8c0b21, #ba0e2c, #eb1236);
+    border-bottom-width: 4px black solid;
+}
+
+.title h1{
+    padding: .5%;
+}
+
+.sky{
+    height: 15%;
+    background : url(joker.gif) 0 0;
+}
+
+
+.plane{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 1080 px;
+    animation: plane 4s infinite;
+ 
+    animation-fill-mode: both;
+    
+}
+
+
+
+.city{
+    height: 30%;
+    width: 100%;
+    background: url(city.gif) 0 0;
+    background-color: black;
+}
+
+.road{
+    height: 55%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+    
+}
+
+.lines{
+    box-sizing: border-box;
+    border : 5px dashed #fff;
+    height: 0px;
+    width: 100% ;
+    position: absolute;
+    top:79%;
+}
+
+.bat{
+
+    position: absolute;
+    top :55%;
+    animation-name: run;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+
+.bomb1{
+
+    
+    position: absolute;
+    top :67%;
+    left: 60%;
+    animation: bomb1 7s infinite;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+
+}
+.bomb2{
+
+    
+    position: absolute;
+    top :67%;
+    left: 80%;
+    animation: bomb2 7s infinite;
+    animation-fill-mode: both;
+
+}
+.bomb3{
+
+    position: absolute;
+    top :67%;
+    left: 20%;
+    animation: bomb3 7s infinite;
+    animation-fill-mode: both;
+
+}
+
+
+
+
+.bombrain1{
+    position: absolute;
+    margin-left : 70%;
+    animation: boom1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+.bombrain2{
+    position: absolute;
+    margin-left : 20%;
+    animation: boom2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+.bombrain3{
+    position: absolute;
+    margin-left : 40%;
+    animation: boom3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+
+}
+
+
+.jk2{
+    position: absolute;
+    top :55%;
+    margin-left: 40%;
+    animation-delay: 3s;
+    animation: joker1 4s;
+    animation-iteration-count: infinite;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* keyframes */
+
+
+
+@keyframes joker1 {
+    from{transform:  rotate(0)}
+    to{transform: rotate(360deg)}
+}
+
+
+
+@keyframes run{
+   
+    from{ transform: translateX(0px)}
+    to{ transform : translateX(2000px) }
+
+}
+
+
+
+
+
+@keyframes plane{
+    from{ transform : translateX(2000px) scale(2) }
+    to{ transform: translateX(-500px) scale(1) rotate(-10deg)}
+}
+
+@keyframes bomb1 {
+    from{ transform :scale(1)}
+    to{ transform:scale(4)}
+    
+}
+
+@keyframes bomb2 {
+    from{ transform : scale(0)}
+    to{ transform: scale(3)}
+    
+}
+@keyframes bomb3 {
+    from{ transform : scale(1)}
+    to{ transform: scale(2)}
+    
+}
+
+@keyframes boom1 {
+
+    from {  margin-top: -2000px; transform: scale(4)}
+    to{margin-top: 30%; transform: scale(0);}
+    
+}
+@keyframes boom2 {
+
+    from {  margin-top: -2000px; transform: scale(4)}
+    to{margin-top: 30%; transform: scale(0);}
+    
+}
+@keyframes boom3 {
+
+    from {  margin-top: -2000px; transform: scale(4)}
+    to{margin-top: 30%; transform: scale(0);}
+    
+}
